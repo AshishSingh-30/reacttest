@@ -214,8 +214,8 @@ const Piechart = () => {
         Table
       </Button>
       {isModalOpen && (
-        <div className="flex justify-center items-center fixed inset-0 bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg max-w-md w-full shadow-lg">
+        <div className="flex justify-center md:items-center items-start overflow-auto fixed inset-0 bg-black bg-opacity-50">
+          <div className="bg-white lg:p-6 p-2 rounded-lg md:max-w-lg max-w-full w-full shadow-lg">
             <div className="flex justify-end">
               <MdCancelPresentation
                 onClick={() => setIsModalOpen(false)}

@@ -4,10 +4,12 @@ import {
   RouterProvider,
   useLocation,
 } from "react-router-dom";
-import { Home, Leadstable } from "./pages/pageIndex";
+import { Certificate, Home, Leadstable } from "./pages/pageIndex";
 import { useEffect } from "react";
 
 function App() {
+  const isLoggedIn = true;
+
   const Layout = () => {
     const { pathname } = useLocation();
     useEffect(() => {
@@ -30,12 +32,15 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <Home isLoggedIn={isLoggedIn} />,
         },
         {
           path: "/leads/:mainchart/:drilldown",
           element: <Leadstable />,
-        },
+        },{
+          path: "/certificate",
+          element: <Certificate />
+        }
       ],
     },
   ]);

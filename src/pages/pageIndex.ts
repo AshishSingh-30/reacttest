@@ -1,7 +1,5 @@
 import Home from "./Home";
-import Leadstable from "./Leadstable"
+import Leadstable from "./Leadstable";
+import Certificate from "./Certificate";
 
-export {
-  Home,
-  Leadstable,
-};
+export { Home, Leadstable, Certificate };

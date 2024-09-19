@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Piechart from "./PieChart";
 import { Button } from "./ui/button";
 
@@ -10,11 +11,6 @@ const Dashboard = () => {
       </div>
       <input type="file" />
       <Button>add</Button>
-      <div>
-        <a href="C:/Users/Aspire Vero/Downloads/invoice_2.pdf" target="_blank">
-          link
-        </a>
-      </div>
 
       <style>{`
         .modal-overlay {
